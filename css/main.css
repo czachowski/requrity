@@ -1,0 +1,313 @@
+
+body
+{
+	font-size: 16px;
+	color: #444444;
+	background-color: #eee;
+	overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Varela Round', sans-serif;\
+    font-family: 'Courgette', cursive;*/
+}
+
+main.home
+{
+	background-image: url('../img/tloland.png');
+	height: 100vh;
+	width: auto;
+}
+
+main.about
+{
+	background-image: url('../img/tlo-tekstura.png');
+	height: 100vh;
+}
+
+main.oferta
+{
+	height: 100vh;
+	background-image: url('../img/tlo-tekstura.png');
+}
+
+/*<-- common --->*/
+
+.container1
+{
+	display: flex;
+}
+
+header.container1
+{
+	height: 70px;
+}
+
+.offset
+{
+	flex: 10;
+	/*border: 2px solid;*/
+}
+
+.offset1
+{
+	flex: 5;
+	/*border: 2px solid;*/
+}
+
+
+.offset2
+{
+	flex: 20;
+	/*border: 2px solid;*/
+}
+
+/*<------bootstrap menu------------------->*/
+
+.row
+{
+	width: 100vw;
+}
+
+.navbar-header
+{
+	width: 100vw;
+}
+
+nav.navbar
+{
+	height: 70px;
+	width: 100vw;
+	margin-top: -70px;
+}
+
+header.plywak
+{
+	width: 100vw;
+	margin-top: -70px;
+	position: fixed;
+	margin-top: 0px;
+}
+
+
+ul.nav
+{
+	margin-left: 5%;
+	margin-top: 10px;
+	width: 100%;
+}
+
+ul.nav li
+{
+	margin-left: 5%;
+	text-transform: uppercase;
+}
+
+
+@media(max-width: 990px)
+{
+	nav.navbar
+	{
+		height: 120px;
+	}
+}
+
+/*<------bootstrap menu KONIEC------------------->*/
+
+.logo1
+{
+	flex: 5;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+
+ul.navbar1
+{
+	display: inline-flex;
+	list-style-type: none;
+	flex: 9;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+ul.navbar1 li.nav1 a.nav1
+{
+	color: #555555;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+}
+
+ul.navbar1 li.nav1 a.nav1:hover
+{
+	color: #777777;
+}
+
+.start
+{
+	text-align: center;
+	opacity: 0.8;
+	margin-top: 2em;
+	flex: 14;
+}
+
+logo.biglogo img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.start.btn1
+{
+	background-color: #ffa64d;
+	box-shadow: 6px 14px 43px 0px rgba(51,51,51,0.93);
+	width: 70%;
+	height: 3em;
+	border-radius: 30px;
+	font-size: 1.3em;
+	font-style: bold;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 3em;
+	margin-top: 2em;
+	text-align: center;
+	flex: 8;
+	justify-content: center;
+	align-items: center;
+}
+
+@media(max-width: 1200px)
+{
+	.start.btn1
+	{
+		height: 6em;
+		border-radius: 90px;
+
+	}
+}
+
+
+@media(max-width: 679px)
+{
+	.start.btn1
+	{
+		height: 9em;
+		border-radius: 120px;
+	}
+}
+
+
+.start.btn1:hover
+{
+	box-shadow: none;
+	background-color: #b35900;
+}
+
+
+
+div.content
+{
+	margin-top: 12%;
+}
+
+.start.btn1 a 
+{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+}
+
+/*<------------separator------------>*/
+
+
+.separator
+{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	margin-top: 5%;
+}
+
+.linia-prawa
+{
+	flex: 4;
+	margin-left: 2%;
+}
+
+.text-separatora
+{
+	font-size: 1.5em;
+}
+
+.linia-lewa
+{
+	flex: 10;
+	margin-right: 30%;
+	margin-left: 2%;
+}
+
+.linia
+{
+	width: 90%;
+	border: 3px solid;
+	border-color: #dcf432;
+}
+
+/*<------------separator------------>*/
+
+
+/*<-------about------------>*/
+
+.tekst-about
+{
+	display: flex;
+	justify-content: center;
+	margin: 0% 5% 5% 5%;
+	width: 100%;
+}
+
+.block
+{
+	flex:20;
+	padding: 0 5% 0 5%;
+	font-size: 1.8em;
+	opacity: 0.7;
+	font-family: 'Varela Round', sans-serif;
+	text-align: center;
+	text-shadow : 2px 2px 8px #111;
+}
+
+img.about-img
+{
+	width: 600px;
+	height: 600px;
+	box-shadow: 25px 25px 30px 0px rgba(0,0,0,0.75);
+}
+
+
+#slideshow1 
+{ 
+	margin: 10%;
+    position: relative; 
+    width: 40%; 
+    height: 40%; 
+}
+
+
+#slideshow2 
+{ 
+	margin: 250px 10% 50px 10%;
+    position: relative; 
+    width: 40%; 
+    height: 40%; 
+}
+/*<-------about------------>*/
+
+/*<-------oferta------------>*/
+
+
+
+/*<-------oferta------------>*/
+
+
+
