@@ -6,8 +6,6 @@ body
 	background-color: #eee;
 	overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    /*font-family: 'Varela Round', sans-serif;\
-    font-family: 'Courgette', cursive;*/
 }
 
 main.home
@@ -262,8 +260,8 @@ div.content
 {
 	display: flex;
 	justify-content: center;
-	margin: 0% 5% 5% 5%;
-	width: 100%;
+	height: 100vh;
+	background-image: url('../img/overlay-black.png');
 }
 
 .block
@@ -275,6 +273,7 @@ div.content
 	font-family: 'Varela Round', sans-serif;
 	text-align: center;
 	text-shadow : 2px 2px 8px #111;
+	color: #fff;
 }
 
 img.about-img
