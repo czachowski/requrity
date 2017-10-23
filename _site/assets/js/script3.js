@@ -1,8 +1,6 @@
-function update() {
-  if ($(window).scrollTop() > 900) {
-    $('.navbar').addClass("tlo-navbar");
-  } else {
-    $('.navbar').removeClass("tlo-navbar");
-  }
-}
-setInterval(update, 1);
+$(document).ready(function(){
+    $(".side-navbar").hide();
+    $(".content-window").hide();
+	$(".side-navbar").slideDown(800);
+    $(".content-window").show(3600);
+});

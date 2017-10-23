@@ -1,112 +1,105 @@
 body
-	font-family: 					'Roboto', sans-serif
-	font-size:						16px
-	background-image:				url('../img/darkness.png')
+	overflow: 						hidden
+	font-size:							16px
+	font-family:						'Roboto', sans-serif
 
-.tlo-navbar
-	background: #ADA996  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.fullscreen-bg__video 
+	position: 							absolute
+	top: 								-35px
+	left: 								0
 
-.menu-nav
-	list-style-type:				none
-	li
-		border-bottom:				2px solid
-		border-color:				transparent
-		padding:					15px
-		&:hover
-			border-color:			$primary-color
-		a
-			color: 					$secondary-color
-			font-size: 				18px
-			&:hover
-				text-decoration: 	none
-				color: 				$secondary-color*0.5
+.full-bg-video
+	width: 								100vw
+	height: 							100vh
+	z-index: 							-100
 
-#home, #first-section, #second-section, #third-section, #fourth-section
-	.container-w
-		width: 						85%
-		margin-left:				auto
-		margin-right: 				auto
-
-.full-height
-	height:							100vh
-
-.full-width
-	width:							100vw
-
-#home
-	background-image:				url('../img/tloland.png')
-	background-position:			center
-	background-repeat: 				no-repeat
-	background-size:				110%
-	padding:						250px 0 0 0
-
-.logo
-	background-image:				url('../img/logo.svg')
-	background-position:			top-center
-	background-repeat: 				no-repeat
-	height:							40px
-	width:							180px
-
-.logo-big
-	background-image:				url('../img/logo.svg')
-	background-position:			center
-	background-repeat: 				no-repeat
-	height:							120px
-	width:							600px
+.skeleton
+	height: 							100vh
+	width: 								100vw
+	top: 								0
+	right: 								0
+	bottom: 							0
+	left: 								0
+	.content-window
+		padding:						30px
+		.content
+			background-image:			url('../img/bg-muted-content.png')
+			background-size:			cover
+			height: 					100%
+			color: 						#fff
+			padding:					50px
+			display: 					flex
+			flex-direction: 			column
+			justify-content: 			center
 
 .line-height
-	line-height:					125%
+	line-height:						150%
 
-.letter-spacing
-	letter-spacing:					2px
+.w-hr
+	height:								2px
 
-.btn
-	cursor:							pointer
+.side-navbar
+	height: 							100%
+	width:								100%
+	ul
+		list-style:						none
+		width: 							100%
+		li
+			padding:					30px 0 30px 0
+			width: 						100%
+			font-size: 					1.5rem
+			text-align: 				center
+			cursor:						pointer
+			&:hover
+				background-color: 		#9ecae3
+				color:					black
+	.search-form
+		input
+			border-radius:				20px 0 0 20px
+			padding:					0 10px 0 10px
+			height: 					30px
+			border:						2px solid #9ecae3
+			border-right:				none
+			&:focus
+				outline: 				none
+		button
+			margin-left: 				-5px
+			height: 					30px
+			border-radius: 				0 20px 20px 0
+			border:						2px solid #9ecae3
+			border-left:				none
+			background: 				#fff
+			cursor:						pointer
+			&:hover
+				background:				transparent
+				color:					#9ecae3
 
-.start-btn
-	color:							white
-	border-radius:					50px
-	-webkit-box-shadow: 			5px 5px 50px 0px $secondary-color
-	-moz-box-shadow: 				5px 5px 50px 0px $secondary-color
-	box-shadow: 					5px 5px 50px 0px $secondary-color
-	padding:						15px 130px 15px 130px
-	font-size:						20px
-	text-transform:					uppercase
-	&:hover
-		-webkit-box-shadow: 		inset 0px 0px 20px 0px $secondary-color
-		-moz-box-shadow: 			inset 0px 0px 20px 0px $secondary-color
-		box-shadow: 				inset 0px 0px 20px 0px $secondary-color
+.bg-muted
+	background-image: 					url('../img/bg-muted.png')
 
-.separator
-	display:						flex
-	align-items:					center
-	width:							64%
-	padding:						100px 0 50px 0
-	margin-right:					auto
-	margin-left:					10%
-	div:nth-child(1)
-		flex:						3
-		height: 					2px
-		background-color:			$green
-	div:nth-child(2)
-		color:						white
-		padding: 					0 20px 0 20px
-		font-size: 					24px
-	div:nth-child(3)
-		flex:						5
-		height: 					2px
-		background-color:			$green
+.logo-nav
+	background-image: 					url('../img/logo.svg')
+	background-repeat:				 	no-repeat
+	background-position: center
+	width:								80px
+	height:								80px
+	cursor:								pointer
 
-.carousel-item 
-	img
-		width: 						1080px
-		height: 					720px
-		box-shadow: 				25px 25px 30px 0px rgba(0,0,0,0.75)
+.bricks
 	div
-		background-image:			url('../img/black.png')
-		padding:					20px
+		div
+			width: 						100%
+			height: 					100%
+			display: 					flex
+			justify-content: 			flex-end
+			align-items:				flex-start
+			border:						2px solid transparent
+			cursor: 					pointer
+			min-height: 				200px
+			&:hover
+				border:					2px solid $orange
+			h1
+				font-size: 				3rem
+				color:					$orange
 
-a[data-slide]
-	padding:						50px
+
