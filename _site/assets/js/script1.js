@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$(".logo").hide();
+	$(".logo-big").hide();
+	$(".start-btn").hide();
+	$('.plywak').hide();
+    $(".logo-big").fadeIn(2000);
+    $(".logo").fadeIn(2000);
+    $(".start-btn").fadeIn(2000);
+});

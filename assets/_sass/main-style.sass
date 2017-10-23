@@ -1,0 +1,112 @@
+body
+	font-family: 					'Roboto', sans-serif
+	font-size:						16px
+	background-image:				url('../img/darkness.png')
+
+.tlo-navbar
+	background: #ADA996  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996)  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.menu-nav
+	list-style-type:				none
+	li
+		border-bottom:				2px solid
+		border-color:				transparent
+		padding:					15px
+		&:hover
+			border-color:			$primary-color
+		a
+			color: 					$secondary-color
+			font-size: 				18px
+			&:hover
+				text-decoration: 	none
+				color: 				$secondary-color*0.5
+
+#home, #first-section, #second-section, #third-section, #fourth-section
+	.container-w
+		width: 						85%
+		margin-left:				auto
+		margin-right: 				auto
+
+.full-height
+	height:							100vh
+
+.full-width
+	width:							100vw
+
+#home
+	background-image:				url('../img/tloland.png')
+	background-position:			center
+	background-repeat: 				no-repeat
+	background-size:				110%
+	padding:						250px 0 0 0
+
+.logo
+	background-image:				url('../img/logo.svg')
+	background-position:			top-center
+	background-repeat: 				no-repeat
+	height:							40px
+	width:							180px
+
+.logo-big
+	background-image:				url('../img/logo.svg')
+	background-position:			center
+	background-repeat: 				no-repeat
+	height:							120px
+	width:							600px
+
+.line-height
+	line-height:					125%
+
+.letter-spacing
+	letter-spacing:					2px
+
+.btn
+	cursor:							pointer
+
+.start-btn
+	color:							white
+	border-radius:					50px
+	-webkit-box-shadow: 			5px 5px 50px 0px $secondary-color
+	-moz-box-shadow: 				5px 5px 50px 0px $secondary-color
+	box-shadow: 					5px 5px 50px 0px $secondary-color
+	padding:						15px 130px 15px 130px
+	font-size:						20px
+	text-transform:					uppercase
+	&:hover
+		-webkit-box-shadow: 		inset 0px 0px 20px 0px $secondary-color
+		-moz-box-shadow: 			inset 0px 0px 20px 0px $secondary-color
+		box-shadow: 				inset 0px 0px 20px 0px $secondary-color
+
+.separator
+	display:						flex
+	align-items:					center
+	width:							64%
+	padding:						100px 0 50px 0
+	margin-right:					auto
+	margin-left:					10%
+	div:nth-child(1)
+		flex:						3
+		height: 					2px
+		background-color:			$green
+	div:nth-child(2)
+		color:						white
+		padding: 					0 20px 0 20px
+		font-size: 					24px
+	div:nth-child(3)
+		flex:						5
+		height: 					2px
+		background-color:			$green
+
+.carousel-item 
+	img
+		width: 						1080px
+		height: 					720px
+		box-shadow: 				25px 25px 30px 0px rgba(0,0,0,0.75)
+	div
+		background-image:			url('../img/black.png')
+		padding:					20px
+
+a[data-slide]
+	padding:						50px
